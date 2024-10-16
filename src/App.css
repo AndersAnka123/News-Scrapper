@@ -5,30 +5,35 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content{
-  max-width: 70%;
-  height: 100dvh;
+  width: 60rem;
+  max-height: 60rem;
+  height: fit-content;
   /* background-color: red; */
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, .7fr);
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
 }
 
 .news-item{
-  background-color: red;
-
+  transition: ease 400ms;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
-
-
-
-
-
-
-
+.news-item:hover{
+  scale: 1.05;
+}
 
