@@ -1,10 +1,12 @@
 body{
   background-color: #333;
+  background-blend-mode: multiply;
   margin: 0;
-  background: url("./assets/Background.jpg");
+  background: url("./assets/Background.jpg" ) #33333350;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   height: 100dvh;
   display: flex;
   align-items: center;
@@ -15,7 +17,6 @@ body{
   width: 60rem;
   max-height: 60rem;
   height: fit-content;
-  /* background-color: red; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, .7fr);
